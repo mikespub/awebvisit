@@ -1,0 +1,195 @@
+<HTML>
+
+<HEAD>
+<TITLE>Mike's Pub -> Tools -> aWebVisit 0.1.6</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=#FFEEDD>
+<CENTER>
+
+<A HREF="http://mikespub.net/"><B>Mike's Pub</B></A> -> <A HREF="http://mikespub.net/tools/"><B>Tools</B></A> -> <A HREF="http://mikespub.net/tools/aWebVisit/"><B>aWebVisit 0.1.6</B></A>
+<HR>
+<BR>
+</CENTER>
+<H2>What is aWebVisit ?</H2>
+<TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0"><TR><TD>
+It's a Perl5 script that analyses WWW logfiles for <B>visitor information</B> like the :<P>
+- most commonly used ENTRY points into the website<BR>
+- most commonly used EXIT points from the website<BR>
+- most commonly used TRANSIT points in the website<BR>
+- most commonly used HIT &amp; RUN points of the website<BR>
+- most frequently followed internal LINKS<BR>
+- average DURATION of each visit<BR>
+- average number of PAGES viewed PER VISIT<BR>
+- average TIME SPENT on each page<BR>
+- path of the LONGEST VISIT (in time and/or hits)<BR>
+- ...<P>
+The reports are generated in HTML format for easy viewing (<A HREF="http://mikespub.net/tools/aWebVisit/awebvisitf.html">sample reports</A>).<P>
+</TD><TD><IMG SRC=awebvisit30.gif WIDTH=400 HEIGHT=360></TD></TR></TABLE>
+
+<H2>What is aWebVisit-Map ?</H2>
+It's a companion program for aWebVisit that allows you to walk through your website and examine <B>the links
+followed by your visitors</B> to and from each web page. Have a look at some <A HREF="http://mikespub.net/tools/aWebVisit/awv-map_n.html">sample web maps</A>,
+or at the real <A HREF="http://mikespub.webjump.com/cgi-bin/awv-map.pl">on-line CGI (not always available !)</A>.<P>
+<IMG SRC=awvm2_1.gif WIDTH=760 HEIGHT=574><P>
+
+<H2>How much does it cost ?</H2>
+It's free, as long as you send some <A HREF="http://mikespub.net/tools/aWebVisit/awv-feedback.html">feedback</A> !<BR>
+Well, okay, <A HREF="http://mikespub.net/tools/aWebVisit/awv-wish.html">donations</A> are always welcome too :-)
+<P>
+
+<H2>Help other people find this site</H2>
+
+          <table width=300 cellspacing=0 cellpadding=0 border=0>
+           <tr>
+            <td><img src="remote_red.gif" width=300 height=11 
+                     alt="Rate this Script @ The CGI Resource Index!"></td></tr>
+          </table><table width=300 cellspacing=0 cellpadding=0 border=0>
+           <tr>
+            <td width=20> </td>
+            <td width=260 bgcolor=#FF3232>
+             <center><table border=0 cellpadding=0 cellspacing=0>
+              <tr>
+               <td><form method=POST action="http://cgi-resources.com/rate/index.cgi">
+                  <input type=hidden name="referer" value="http://mikespub.net/tools/aWebVisit/">
+                  <input type=hidden name="link_code" value="02952">
+                  <input type=hidden name="category_name" 
+                   value="Programs and Scripts/Perl/Logging Accesses and Statistics/">
+                  <input type=hidden name="link_name" 
+                   value="aWebVisit">
+                   <font face="Verdana,Arial,Helvetica" size=-1><b>Script Rating: </b>
+                   </font> <select name="rating">
+                    <option selected>--
+                    <option>10
+                    <option>9
+                    <option>8
+                    <option>7
+                    <option>6
+                    <option>5
+                    <option>4
+                    <option>3
+                    <option>2
+                    <option>1
+                    </select> 
+               </td>
+               <td valign=center>
+                <input type=image src="remote_red_sub.gif" width=59 
+                       height=18 alt="Rate It!" border=0></td></tr>
+             </table></center></td>
+            <td width=20> </td>
+           </tr>
+          </table><table width=300 cellspacing=0 cellpadding=0 border=0>
+           <tr><td colspan=3 width=300><img src="remote_red_bot.gif" 
+                                    width=300 height=11></td></tr>
+          </table></form>
+
+<P>
+
+<H2>Downloading the latest versions</H2>
+If you want <B>the complete package</B> (.zip file) at once, get it <A HREF="http://mikespub.virtualave.net/getfile.cgi?awebvist.zip">here (74 KB)</A>. Note : you still need to download the <A HREF="http://martin.gleeson.com/fly/"><I>fly</I> program</A> separately...<P>
+
+<B>aWebVisit 0.1.6b</B> by itself can be downloaded from <A HREF="http://mikespub.virtualave.net/getfile.cgi?awebvisit.txt">here (120 KB)</A>. It was released on 18/Feb/1999.
+(version 0.1.6b contains a minor bug fix for version 0.1.6, which was released on 17/Feb/1999.)<P>
+Last changes are the configurable exclusion/inclusion of URLs, hosts, entry points (e.g. for robots), partial removal or replacement of URLs, ... 
+And last but not least, the adaptation of the statistics file for use with <B>aWebVisit-Map 0.1.6</B>.
+You can download the CGI script separately from <A HREF="http://mikespub.virtualave.net/getfile.cgi?awv-map.txt">here (100 KB)</A>.
+<P>
+Note : if you have problems downloading this software, please try again first.
+If the problem remains, please post a message at the new <A
+HREF="http://mikespub.net/forum/index.php?f=1">Support Forum for aWebVisit</A> with the symptoms and your browser version.
+<P>
+
+<H2>Installation and Configuration</H2>
+Nothing is easier :
+<OL>
+<LI>copy awebvisit to any directory
+<LI>find out where your web server logfiles are located
+<LI>run 'perl awebvisit &lt;logfile(s)&gt;' (you need perl5, not perl4)
+<LI>have a look at the HTML output reports : <A HREF="http://mikespub.net/tools/aWebVisit/awebvisitf.html">awebvisitf.html</A>
+</OL>
+No need to change your pages or webserver (no SSI, CGI, referer log, cookies, ...).
+If you do <B>not</B> have a command line interface to your webserver (telnet, DOS box, ...), you can either download the logfiles to a local PC/workstation and run aWebVisit there, use some kind of CGI wrapper (coming soon), or ask your webmaster to run it for you...
+<P>
+In order to get the graphical web maps, you'll also need the <I>fly</I> program (free). It's just three little steps :
+<OL>
+<LI>find out what operating system your webserver is running on - ask your webmaster or hosting company
+<LI>install the <A HREF="http://martin.gleeson.com/fly/">right version of <I>fly</I></A> (Windows 95/NT, various UNIXes, ...), and
+<LI><A HREF="http://mikespub.net/tools/aWebVisit/awebvisitc.html#fly">tell aWebVisit</A> where to find it.
+</OL>
+You'll see the difference...<P>
+If you want to use the companion program <B>aWebVisit-Map</B>, you'll need to configure at least <I>some</I> parameters since it's a CGI program (hint : ask your webmaster to install it for you).
+Don't worry, it's not very difficult : everything is explained at the beginning of the script. And the <A HREF="http://mikespub.net/tools/aWebVisit/awv-map_n.html">results</A> are worth it...<P>
+
+<H2>Changing the default settings</H2>
+You can modify the default <A HREF="http://mikespub.net/tools/aWebVisit/awebvisitc.html">configuration</A> of aWebVisit in the script itself, e.g. :
+<UL>
+<LI>the output directory,
+<LI>the name of the output reports,
+<LI>the URLs to be excluded (e.g. images),
+<LI>the timeout value for a visit, and
+<LI>the number of pages/links to be shown in each Top N table.
+<LI>the number of entry, transit and exit pages to show in the web maps
+</UL>
+And same thing for aWebVisit-Map...<P>
+
+<H2>Why use aWebVisit (instead of ...) ?</H2>
+There are hundreds of logfile analysers in the world, but most of them concentrate
+on 'basic' statistics like the number of hits per hour, day, week or month,
+the pages with the most hits, the originating domains etc. For a list of common
+tools, have a look at <A HREF="http://www.davecentral.com/webstat.html">DaveCentral</A> or at <A HREF="http://www.cgi-resources.com/Programs_and_Scripts/Perl/Logging_Accesses_and_Statistics/">CGI-Resources</A> for instance.<BR>
+These tools are great, but something is still missing : how do you know what your visitors
+are actually DOING on your website ? How do they navigate inside your website  : do they just 'hit-and-run',
+or do they walk through the site as you intended ? Which pages tend to 'put off' your visitors so that they
+leave your website ? 
+<P>
+Getting reliable visitor information has always been tricky. Some tools rely on
+a specific SSI (server-side include) or CGI for each page to keep track of visits, others use
+the referer log information, while others work with cookies to keep track of sessions.
+<BR>
+All of this is fine, but what of the logfiles you collected in the last few months/years ?
+And do you even want to change your pages or server for this ? The only non-intrusive way
+is to use referrer information, which is often standard on webservers, but this does not
+really work for frames inside your website. And some browsers don't send the referrer, while others might send anything...
+<P>
+So, here we are with <B>aWebVisit</B> and <B>aWebVisit-Map</B>. It's easy, it's free, and it's yours for a try-out.
+It may not be perfect (especially with AOL), but it'll give you a good idea of what people might do on your website. Just don't forget to send some <A HREF="http://mikespub.net/tools/aWebVisit/awv-feedback.html">feedback</A> !<BR>
+If you're also interested in getting the 'standard' web statistics, try <A HREF="http://www.statslab.cam.ac.uk/~sret1/analog/">Analog</A>. If you want to find out
+which search engines led to your website, try <A HREF="http://ktmatu.com/software/relax/">Relax</A>. They're free too...<P>
+
+<H2>What do the numbers mean ?</H2>
+Anyone who tells you he can extract 100% reliable 'visit' information directly from webserver logfiles is a liar - or a fool. The only thing a webserver logfile can really tell you is the 'hits' that the webserver saw, but not what people actually did.
+<P>
+So, if aWebVisit tells you that the average time spent on a particular page is 75.1 seconds, this does NOT mean that people actually spent 75.1 (or even 70) seconds on that page on average.
+<P>
+What it does mean is that - for pages where aWebVisit counted a significant number of hits as entry pages and/or transit pages -
+those people who can be identified by a unique IP address during a visit are probably spending more time on a page with an average of 75.1 seconds
+than on a page with an average of 49.3 seconds. If they are not all taking a coffee break at that page, that is...
+<P>
+And if aWebVisit tells you that the link from /abc.html to /def.html was followed 14 times, this does NOT mean that 14 people actually followed that link. The link might not even exist, except as random noise in the sequence of webserver hits.
+<P>
+But if the link from /abc.html to /def.html was followed 12514 times, and the link from /abc.html to /ghi.html was followed only 3501 times according to aWebVisit, well, you might consider making that link on page /abc.html a bit more attractive to people. Maybe you'll see a difference next month...
+<P>
+<H2>Plans for the future</H2>
+This is as far as I go on my own. If you want more, give some <A HREF="http://mikespub.net/tools/aWebVisit/awv-feedback.html">feedback to awebvisit@mikespub.net</A> first...<P>
+You can have a <A HREF="http://mikespub.net/tools/aWebVisit/awv-wip.html">sneak preview</A> of some of the features that may become part of the next release (if there is sufficient feedback).
+<BR>
+
+<H2>About aWebVisit 0.1.6</H2>
+See the aWebVisit <A HREF="http://mikespub.net/tools/aWebVisit/awebvisith.html">help</A> file...
+<P>
+
+<CENTER>
+<A HREF="http://mikespub.net/tools/aWebVisit/awv-feedback.html">Would you care to give me some feedback on this ?<BR>It's your last chance...before the end of this page :-)</A>
+<P>
+<HR>
+<A HREF="http://mikespub.net/"><B>Mike's Pub</B></A> -> <A HREF="http://mikespub.net/tools/"><B>Tools</B></A> -> <A HREF="http://mikespub.net/tools/aWebVisit/"><B>aWebVisit 0.1.6</B></A>
+<P>
+Project Homepage : <A HREF="http://sourceforge.net/projects/awebvisit/">http://sourceforge.net/projects/awebvisit/</A>
+<P>
+<A href="http://sourceforge.net"><IMG
+src="http://sourceforge.net/sflogo.php?group_id=42342&type=1" width="88"
+height="31" border="0" alt="SourceForge Logo"></A>
+</CENTER>
+</BODY>
+</HTML>
+
