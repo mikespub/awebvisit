@@ -8,22 +8,30 @@ $helpmsg = <<'EOF';
 #
 # NAME
 #
-#	aWebVisit Version 0.1.6b, 18/02/1999
+#	aWebVisit Version 0.1.6c, 08/01/2002
 #
 # AUTHOR
 #
-#	Michel Dalle (awebvisit@mikespub.net), Copyright 1999.
+#	Copyright (C) 1999-2002, Michel Dalle (awebvisit@mikespub.net)
 #
-# DISTRIBUTION
+# DISTRIBUTION AND LICENSE
 #
 #	http://mikespub.net/tools/aWebVisit/
 #
-#	If you like this software, or if you make modifications that might
-#	be of interest to other people (new statistics, optimisations, ...),
-#	please send me an e-mail !
+#	This program is free software; you can redistribute it and/or
+#	modify it under the terms of the GNU General Public License
+#	as published by the Free Software Foundation; either version 2
+#	of the License, or (at your option) any later version.
 #
-#	This software is made available AS IS, and is distributed without
-#	warranty of any kind, either expressed or implied.
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public License
+#	along with this program; if not, write to the Free Software
+#	Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,
+#	USA.
 #
 # PURPOSE
 #
@@ -84,6 +92,8 @@ $helpmsg = <<'EOF';
 #	grep that_client logfile | awebvisit
 #
 # HISTORY
+#
+#	0.1.6c 08/01/2002 Now available under GNU GPL license
 #
 #	0.1.6b 18/02/99	Minor bug fix for exclude_visit and include_visit
 #
